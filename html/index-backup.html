@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Amazen</title>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/interesar.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link class="icono" rel="shortcut icon" href="img/icon_amazen.png">
+	<!-- Este link introduce la url de la fuente de amazon-->
+	<link href="http://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+	<!-- Esta linea introduce el icono lupa de la barra de busqueda -->
+	<script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+	<!-- Esta linea introduce la libreria jQuery para poder ser utilizada -->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<!-- Esta linea introduce el icono redes sociales del footer -->
+	<script src="https://kit.fontawesome.com/e1e79a1c29.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+		<header>
+			<!-- Logo menu -->
+			<div class="div-logo">
+				<img class="logo_menu" src="./img/amazon_logo_azul.png"/>
+			</div>
+
+			<!-- Barra de busqueda -->
+			<form class="buscar" action="busqueda.php" method="POST">
+				<input class="busqueda" type="text" name="busqueda" placeholder="Buscar" required>
+				<input class="btn-lupa-submit" type="submit" name="btn-lupa-submit" value="">
+
+				<div class="btn-lupa">
+				   <i class="fas fa-search icon"></i>
+				</div>
+			</form>
+			
+			<!-- Carrito -->
+			<div  class="carrito">
+				<img src="./img/Cesta.png">
+				<div id="cart_menu_num" >59</div>
+			</div>
+	
+			<!-- Login -->
+			<div class="login">
+				Hola, identifícate
+				<div class="dropdown-login">
+					<span class="tri-login">&#9652;</span>
+					<button id="btn-login" onclick="location.href='login.html'" >Identificarse</button>
+					<br>
+					<p>¿Eres cliente nuevo? Empieza aquí</p>
+				</div>
+			</div>
+
+			<!-- Jotas -->
+			<div class="jotas">
+				Compra Jotas
+				<div class="moneda">
+					<div class="cara" id="frente"></div>
+					<div class="cara" id="medio1"></div>
+					<div class="cara" id="medio2"></div>
+					<!-- <div class="cara" id="izquierda"></div> -->
+					<div class="cara" id="atras"></div>
+					<!-- <div class="cara" id="derecha"></div> -->
+				</div>
+			</div>
+
+			<!-- Elementos desplegables -->
+				<div id="menu_header">
+					<ul class="nav">
+						<li id="item-cero">
+							<a href="index.html">Inicio</a>
+						</li>
+						<li id="item-uno">
+							<a href="#">Mejor valorados</a>
+						</li>
+						<li id="item-dos">
+							<a href="#">Ofertas</a>
+						</li>
+						<li id="item-tres">
+							<a href="#">Novedades</a>
+						</li>
+						<li id="item-cuatro">
+							<a href="#">Categorias</a>
+						</li>
+						<li id="item-cinco">
+							<a href="#">Registro</a>
+						</li>
+						<li id="item-seis">
+							<a href="#">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- Capa que se oscurece -->
+			
+			<!-- Div principal donde colocaremos las categorias -->
+			  <div class="main_categorias">
+
+				<div class="categorias">
+					<h3>Libros, música, peliculas</h3>
+					<div class="container-img"><img src="img/categorias/libros.jpg" alt=""></div>
+					<a href="#">Ver más</a>
+
+				</div>
+
+				<div class="categorias">
+					<h3>Software, videojuegos</h3>
+					<div class="container-img"><img src="img/categorias/videojuegos.jpg" alt=""></div>
+					<a href="#">Ver más</a>
+
+				</div>
+
+				<div class="categorias">
+					<h3>Informática y electrónica</h3>
+					<div class="container-img"><img src="img/categorias/electronica.jpg" alt=""></div>
+					<a href="#">Ver más</a>
+
+				</div>
+
+				<div class="categorias">
+					<h3>Ropa y accesorios</h3>
+					<div class="container-img"><img src="img/categorias/ropa.jpg" alt=""></div>
+					<a href="#">Ver más</a>
+
+				</div>
+
+				<div class="categorias">
+					<h3>Instrumentos musicales</h3>
+					<div class="container-img"><img src="img/categorias/instrumentos.jpg" alt=""></div>
+					<a href="#">Ver más</a>
+
+				</div>
+
+				<div class="categorias">
+					<h3>Cuidado Personal</h3>
+					<div class="container-img"><img src="img/categorias/cuidado_personal.jpg" alt=""></div>
+					<a href="#">Ver más</a>
+
+				</div>
+
+			</div>
+			<div id="productos_relacionados"> 
+				<br><br>
+				<hr>
+				<p id="titulo_prods_relacs"><b>Tal vez te pueda interesar</b></p>
+				<table id="productos_relacionados_t" >
+					<td id="prods_relacs_td" valign="top"> <!--Todos estos td's funcionan igual-->
+						<a id="prods_relacs_links" href="#">
+						<img src="./img/iphone13.png" id="imagen_producto_relacionado">
+						<p id="titulo_producto_relacionado">Apple iPhone 14 (128 GB) - Negro Noche</p>
+						<p id="valoracion_producto_relacionado"><img src="./img/estrellitas.png" id="estrellitas_prod_relac"> <span id="valoraciones_prod_relac">453</span></p>
+						<p id="precio_producto_relacionado">998,00 € </p></td>
+						</a>
+					</td>
+					<td id="prods_relacs_td" valign="top">
+						<a id="prods_relacs_links" href="#">
+							<img src="./img/iphone13.png" id="imagen_producto_relacionado">
+							<p id="titulo_producto_relacionado">Apple iPhone 14 (128 GB) - Negro Noche</p>
+							<p id="valoracion_producto_relacionado"><img src="./img/estrellitas.png" id="estrellitas_prod_relac"> <span id="valoraciones_prod_relac">453</span></p>
+							<p id="precio_producto_relacionado">998,00 € </p></td>
+							</a>
+					</td>
+					<td id="prods_relacs_td" valign="top">
+						<a id="prods_relacs_links" href="#">
+							<img src="./img/iphone13.png" id="imagen_producto_relacionado">
+							<p id="titulo_producto_relacionado">Apple iPhone 14 (128 GB) - Negro Noche</p>
+							<p id="valoracion_producto_relacionado"><img src="./img/estrellitas.png" id="estrellitas_prod_relac"> <span id="valoraciones_prod_relac">453</span></p>
+							<p id="precio_producto_relacionado">998,00 € </p></td>
+							</a>
+					</td>
+					<td id="prods_relacs_td" valign="top">
+						<a id="prods_relacs_links" href="#">
+							<img src="./img/iphone13.png" id="imagen_producto_relacionado">
+							<p id="titulo_producto_relacionado">Apple iPhone 14 (128 GB) - Negro Noche</p>
+							<p id="valoracion_producto_relacionado"><img src="./img/estrellitas.png" id="estrellitas_prod_relac"> <span id="valoraciones_prod_relac">453</span></p>
+							<p id="precio_producto_relacionado">998,00 € </p></td>
+							</a>
+					</td>
+					<td id="prods_relacs_td" valign="top">
+						<a id="prods_relacs_links" href="#">
+							<img src="./img/iphone13.png" id="imagen_producto_relacionado">
+							<p id="titulo_producto_relacionado">Apple iPhone 14 (128 GB) - Negro Noche</p>
+							<p id="valoracion_producto_relacionado"><img src="./img/estrellitas.png" id="estrellitas_prod_relac"> <span id="valoraciones_prod_relac">453</span></p>
+							<p id="precio_producto_relacionado">998,00 € </p></td>
+							</a>
+					</td>
+					<td id="prods_relacs_td" valign="top">
+						<a id="prods_relacs_links" href="#">
+							<img src="./img/iphone13.png" id="imagen_producto_relacionado">
+							<p id="titulo_producto_relacionado">Apple iPhone 14 (128 GB) - Negro Noche</p>
+							<p id="valoracion_producto_relacionado"><img src="./img/estrellitas.png" id="estrellitas_prod_relac"> <span id="valoraciones_prod_relac">453</span></p>
+							<p id="precio_producto_relacionado">998,00 € </p></td>
+							</a>
+					</td>
+				</table>
+		</main>
+
+
+		<footer>
+			<div class="container_footer">
+				<div class="volver-arriba">
+					<p>Volver arriba</p>
+				</div>
+
+				<div class="box_footer">
+					<h4>Conócenos</h4>
+					<a href="#">Trabajar en Amazen</a>
+					<a href="#">Sobre Amazen.es</a>
+					<a href="#">Sostenibilidad</a>
+					<a href="#">Amazen Science</a>
+				</div>
+
+				<div class="box_footer">
+					<h4>Gana dinero con nosotros</h4>
+					<a href="#">Vender en Amazen</a>
+					<a href="#">Vender en Amazen Business</a>
+					<a href="#">Vende en Amazen Handmade</a>
+					<a href="#">Vender en Amazen Launchpad</a>
+					<a href="#">Programa de afiliados</a>
+					<a href="#">Logística de Amazen</a>
+					<a href="#">Promociona tus productos</a>
+					<a href="#">Publica tu libro en Kindle</a>
+					<a href="#">Amazen Pay</a>
+					<a href="#">Alojar un Amazen Hub</a>
+				</div>
+	
+				<div class="box_footer">
+					<h4>Métodos de pago Amazen</h4>
+					<a href="#">Métodos de pago</a>
+					<a href="#">Conversor de divisas de Amazen</a>
+					<a href="#">Cheques Regalo</a>
+					<a href="#">Recarga online</a>
+					<a href="#">Recarga en tienda</a>
+				</div>
+
+				<div class="box_footer">
+					<h4>¿Necesitas ayuda?</h4>
+					<a href="#">Amazen y COVID-19</a>
+					<a href="#">Localizar o gestionar compras</a>
+					<a href="#">Tarifas y políticas de envío</a>
+					<a href="#">Amazen Prime</a>
+					<a href="#">Devolver o reemplazar productos</a>
+					<a href="#">Reciclaje</a>
+					<a href="#">Gestionar contenido y dispositivos</a>
+					<a href="#">App Amazen</a>
+					<a href="#">Atención al Cliente</a>
+					<a href="#">IVA sobre los bienes</a>
+					<a href="#">Accesibilidad</a>
+				</div>
+			</div>
+			<div class="box_copyright">
+				<hr>
+				<div class="logo">
+					<img src="img/amazon_logo_footer.png" alt="">
+				</div>
+				<div class="paises_copyrigth">
+					<ul>
+						<li>
+							<a href="#">Australia</a>
+						</li>
+						<li >
+							<a href="#">Alemania</a>
+						</li>
+						<li>
+							<a href="#">Brasil</a>
+						</li>
+						<li>
+							<a href="#">Canadá</a>
+						</li>
+						<li>
+							<a href="#">China</a>
+						</li>
+						<li>
+							<a href="#">Estados Unidos</a>
+						</li>
+						<li>
+							<a href="#">Francia</a>
+						</li>
+						<li>
+							<a href="#">India</a>
+						</li>
+						<li >
+							<a href="#">Italia</a>
+						</li>
+						<li>
+							<a href="#">Japón</a>
+						</li>
+						<li>
+							<a href="#">México</a>
+						</li>
+						<li>
+							<a href="#">Países Bajos</a>
+						</li>
+						<li>
+							<a href="#">Polonia</a>
+						</li>
+						<li>
+							<a href="#">Emiratos Arabes Unidos</a>
+						</li>
+						<li>
+							<a href="#">Reino Unido</a>
+						</li>
+						<li>
+							<a href="#">Singapur</a>
+						</li>
+						<li>
+							<a href="#">Turquía</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<div class="footer-final">
+			<ul>
+				<li><a href="#">Condiciones de Uso y Venta</a></li>
+				<li><a href="#">Aviso de Privacidad</a></li>
+				<li><a href="#">Área Legal</a></li>
+				<li><a href="#">Cookies</a></li>
+				<li><a href="#">Publicidad basada en intereses</a></li>
+			</ul>
+			<br>
+			<p>© 1996-2022, Amazen.com, Inc. o sus afiliados</p>
+		</div>
+</body>
+
+<!-- En esta línea referenciamos el archivo js donde implementamos jQuery -->
+<script src="js/main.js"></script>
+
+</html>

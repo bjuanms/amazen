@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+	
+
+.moneda {
+	width: 200px;
+	height: 200px;
+	*background-color: aqua;
+	margin-top: 5px;
+	margin-left: 30px;
+	transform-style: preserve-3d;
+	*transform: perspective(600px) rotateX(-30deg) rotateY(-30deg);
+	animation: rotate 10s infinite linear;
+	position: absolute;
+	transform: translateY(50px);
+}
+
+@keyframes rotate {
+	0% {transform: rotateX( 0deg ) rotateY( 0deg );}
+	100% { transform: rotateX( 0deg ) rotateY( 360deg ); }
+}
+
+.moneda .cara {
+	position: absolute;
+}
+
+.cara#frente {
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border-radius: 50%;
+	transform: translateZ(7px);
+}
+
+.cara#atras {
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border-radius: 50%;
+}
+
+.cara#medio1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(2px);
+}
+
+.cara#medio2 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(1px);
+}
+.cara#medio3 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(3px);
+}
+
+.cara#medio4 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(4px);
+}
+.cara#medio5 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(5px);
+}
+
+.cara#medio6 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(6px);
+}
+#jota{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	
+}
+    </style>
+
+
+</head>
+<body>
+
+    <div class='moneda'>
+        <div class='cara' id='frente'><img src=./jota.png id="jota"></div>
+        <div class='cara' id='medio1'></div>
+        <div class='cara' id='medio2'></div>
+		<div class='cara' id='medio3'></div>
+        <div class='cara' id='medio4'></div>
+		<div class='cara' id='medio5'></div>
+        <div class='cara' id='medio6'></div>
+        <div class='cara' id='atras'><img src=./jota.png id="jota"></div>  
+    </div>
+
+</body>
+</html>

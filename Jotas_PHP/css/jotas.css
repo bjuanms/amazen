@@ -1,0 +1,346 @@
+@charset "utf-8"; 
+
+body{
+    font-family: 'Amazon Ember',arial, sans-serif;
+    background: white;
+    text-align: justify;
+    min-width: 1700px;  
+}
+
+.tradingview-widget-container {
+	height: 160px;
+}
+
+.cambio {
+	margin-left: 20%;
+}
+
+.formulario-compra {
+	width: 100%;
+	height: 40vh;
+}
+
+a{ /*link de la marca. al pinchar nos salen todos los productos de esta*/
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover{
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+#usuario{
+    width: 100%;
+    height: 3.3em;
+    background-color:  #defaff
+}
+#perfil_cliente{
+    margin-left: 30%;
+    padding-top: 10px;
+}
+
+#foto_perfil{
+    height: 30px;
+    width: auto;
+    float: left;
+    
+}
+#nombre_perfil_cliente{
+   float: none;
+    margin-left: 10px;
+    font-size: 14px;
+      
+}
+#formulario_opinion{
+    margin-left: 30%;
+    margin-right: 33%;
+}
+
+#titulo_jotas{
+    font-size: 40px;
+    margin-top: 30px;
+    color: blue;
+}  
+
+#peque{
+    font-size: 20px;
+}
+#jotas_dcha{
+	float: right;
+	margin-top: 20px;
+	margin-right: 33%;
+}
+#jota_peque{
+	height: 40px;
+	margin-left: 15px;
+	float: right;
+}
+#bjota{
+	
+	float: left;
+	margin-top: 10px;
+	
+}
+
+#letra_jotas{
+    color: blue;
+}
+
+#fieldset{
+    width: 390px;
+    float: right;
+	padding: 10px;
+}
+
+#cambio_actu{
+    margin-left: 40%;
+}
+#amarillo{
+    background-color: yellow;
+}
+#seguro{
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+/*---------BOTÓN DE PAYPAL----------*/
+#paypal-button-container{
+	width: 400px;
+	margin-left: 15%;
+}
+
+#enviar{
+    background-color:  #ffd814;
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 200px;
+    height: 32px;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+}
+#enviar:hover{
+    background-color: #f1cc13;
+    cursor: pointer;
+ }
+ #enviar:active{
+     background-color: #ffd814;
+ 
+  }
+
+  #cancelar{
+    background-color:  #ffd814;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 200px;
+    height: 32px;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+}
+#cancelar:hover{
+    background-color: #f1cc13;
+    cursor: pointer;
+ }
+ #cancelar:active{
+     background-color: #ffd814;
+ 
+  }
+
+  
+  /*-----------CSS DE LA MONEDA GIRATORIA PÁGINA JOTAS, LA MONEDA GRANDE-----------------*/
+
+.moneda- {
+	width: 200px;
+	height: 200px;
+	margin-top: 5px;	
+	margin-left: 30px;
+	transform-style: preserve-3d;
+	animation: rotate 10s infinite linear;
+	position: absolute;
+	transform: translateY(50px);   
+}
+
+.moneda1 {
+	width: 200px;
+	height: 200px;
+	margin-top: 5px;	
+	margin-left: 30px;
+	transform-style: preserve-3d;
+	animation: rotate 10s infinite linear;
+	position: absolute;
+	transform: translateY(50px);   
+}
+
+@keyframes rotate {
+	0% {transform: rotateX( 0deg ) rotateY( 0deg );}
+	100% { transform: rotateX( 0deg ) rotateY( 360deg ); }
+}
+
+.moneda- .cara {
+	position: absolute;
+    
+}
+
+.cara#frente- {
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border-radius: 50%;
+	transform: translateZ(7px);
+}
+
+.cara#atras- {
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border-radius: 50%;
+}
+
+.cara#medio1- {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(2px);
+}
+
+.cara#medio2- {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(1px);
+}
+.cara#medio3- {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(3px);
+}
+
+.cara#medio4- {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(4px);
+}
+.cara#medio5- {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(5px);
+}
+
+.cara#medio6- {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(6px);
+}
+#jota-{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	
+}
+  
+/*-----------CSS DE LA MONEDA GIRATORIA PÁGINA  COMPRAR JOTAS-----------------*/
+
+.moneda1 {
+	width: 200px;
+	height: 200px;
+	*background-color: aqua;
+	margin-top: 40px;
+	margin-left: 11%;
+	transform-style: preserve-3d;
+	*transform: perspective(600px) rotateX(-30deg) rotateY(-30deg);
+	animation: rotate 10s infinite linear;
+	position: absolute;
+	transform: translateY(50px);   
+	float: left;
+}
+
+@keyframes rotate {
+	0% {transform: rotateX( 0deg ) rotateY( 0deg );}
+	100% { transform: rotateX( 0deg ) rotateY( 360deg ); }
+}
+
+.moneda1 .cara {
+	position: absolute;
+    
+}
+
+.cara#frente {
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border-radius: 50%;
+	transform: translateZ(7px);
+}
+
+.cara#atras {
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border-radius: 50%;
+}
+
+.cara#medio1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(2px);
+}
+
+.cara#medio2 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(1px);
+}
+.cara#medio3 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(3px);
+}
+
+.cara#medio4 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(4px);
+}
+.cara#medio5 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: rgb(4, 61, 104);
+	transform: translateZ(5px);
+}
+
+.cara#medio6 {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color:rgb(4, 61, 104);
+	transform: translateZ(6px);
+}
+#jota{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	
+}

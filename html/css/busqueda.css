@@ -1,0 +1,88 @@
+@charset "utf-8"; 
+
+/*-------------------------DIV PRODUCTOS RELACIONADOS----------------*/
+
+#productos_relacionados{
+    margin-left: 16%;
+    margin-right:15%;    
+}
+
+#productos_buscados{
+    margin-left: 16%;
+    margin-right:15%; 
+
+
+}
+
+#titulo_prods_relacs{
+   font-size: 25px; 
+}
+
+#productos_relacionados_t{
+    height: auto;
+    display: flex;
+}
+
+/*  Viene siendo el contenedor carrousel 
+#productos_relacionados_t{
+    height: auto;
+    width: 100%;
+    scroll-bhavior
+}
+
+.carrousel {
+
+
+
+}
+
+*/
+
+#prods_relacs_td{
+    width: 200px;
+    text-decoration: none;
+    flex-wrap: wrap;
+ 
+}
+#prods_relacs_td:hover{
+    cursor: pointer;
+ 
+}
+#prods_relacs_td:hover #titulo_producto_relacionado{
+    color: #c7511f;
+    text-decoration: underline;
+    
+}
+
+#imagen_producto_relacionado{
+    height: 150px;
+    width: auto;
+    margin-left: 37px;
+    margin-top: 20px;
+    
+}
+#titulo_producto_relacionado{
+    text-align: left;
+    margin-left: 10px;
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+#valoracion_producto_relacionado{
+    margin-left: 10px;
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+#estrellitas_prod_relac{
+    height: 15px;
+}
+#precio_producto_relacionado{
+    color: rgb(170, 89, 89);
+    font-size:20px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+#prods_relacs_links{
+    text-decoration: none;
+}

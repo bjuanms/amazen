@@ -1,0 +1,323 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* Propiedades estructura principal */
+body {
+	font-family: 'Amazon Ember', sans-serif;
+	justify-content: center;
+	height: 100vh;
+}
+
+/*  Main  */
+main {
+	*width: 100%;
+	min-width: 1000px;
+	height: 100%;
+	*height: 200vh;
+}
+
+
+/* Propiedades del header */
+header {
+	font-size: small;
+	width: 100%;
+	min-width: 1000px;
+	height: 6.5em;
+	top: 0; 
+	background-color: #131921;
+	z-index: 10;
+}
+
+/* Logo */
+.logo_menu {
+	margin-top: 12px;
+	margin-left: 12px;
+	width: 112px;
+	height: 40px;
+	float: left;
+}
+
+/* Menu Header */
+#menu_header {
+	width: 100%;
+	height: 2.5em;
+	background-color: #232f3e;
+	padding-top: 0.4em;
+	align-items: center;
+	text-align: center;
+	float: left;
+}
+	
+#menu_header ul {
+	list-style: none;
+	margin: 0;
+}
+	
+#menu_header ul li {
+	margin: 0;
+	float: left;
+	width: auto;
+}
+	
+#menu_header ul li a {
+	width: 130px;
+	font-size: 1.3em;
+	text-align: center;
+	line-height: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+#menu_header ul li a:hover {
+	border: solid white 1px;
+}
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	width: 10%;
+	float: left;
+}
+
+.nav li:hover > ul {
+	display:block;
+}
+
+.nav li ul li {
+	position:relative;
+}
+
+.nav li ul li ul {
+	right:-140px;
+	top:0px;
+	float:left;
+}
+
+.nav li a {
+	display:block;
+}
+
+/* BUSQUEDA */
+.buscar {
+	position: absolute;
+	padding: 5px;
+	top: 5px;
+	left: 150px;
+	width: 60%;
+	min-width: 600px;
+}
+
+.busqueda{
+	width: 100%;
+	height: 34px;
+	padding: 0 20px;
+	font-size: 18px;
+	color: #534f8a;
+	outline-color: #ff8c0d;
+	border: none;
+	border-radius: 5px;
+	z-index: 3;
+}
+
+.btn-lupa {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 34px;
+	height: 34px;
+	line-height: 37px;
+	text-align: center;
+	align-items: center;
+	color: black;
+	font-size: 20px;
+	border-radius: 0px 2px 2px 0;
+	cursor: pointer;
+	background: #febd69;
+	z-index: 2;
+}
+
+/* .btn-lupa:hover {
+	background: #f3a847;
+} */
+
+.btn-lupa-submit {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 34px;
+	height: 34px;
+	cursor: pointer;
+	background: #f3a847;
+	z-index: 5;
+	opacity: 0;
+	border: 0;
+}
+
+/* CARRITO */
+.carrito {
+	float: right;
+	margin-right: 10px;
+}
+
+#cart_menu_num {
+	position: relative;
+	top: 3px;
+	right: 65px;
+	width: 15px;
+	height: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ff8c0d;
+	font-size: large;
+	font-weight: bold;
+	float: right;
+}
+
+.carrito:hover {
+	border: solid white 1px;
+}
+
+
+/* JOTAS */
+
+.jotas {
+	float: right;
+	color: white;
+	margin-right: 10px;
+	width: 90px;
+	height: 50px;
+}
+
+.jotas:hover {
+	border: solid white 1px;
+}
+
+/* Moneda JOTAS */
+
+.moneda {
+	width: 20px;
+	height: 20px;
+	*background-color: aqua;
+	margin-top: 5px;
+	margin-left: 30px;
+	transform-style: preserve-3d;
+	*transform: perspective(600px) rotateX(-30deg) rotateY(-30deg);
+	animation: rotate 2s infinite linear;
+	position: absolute;
+	transform: translateY(50px);
+}
+
+@keyframes rotate {
+	0% {transform: rotateX( 0deg ) rotateY( 0deg );}
+	100% { transform: rotateX( 0deg ) rotateY( 360deg ); }
+}
+
+.moneda .cara {
+	position: absolute;
+}
+
+.cara#frente {
+	width: 20px;
+	height: 20px;
+	background-color: gold;
+	border-radius: 50%;
+	transform: translateZ(3px);
+}
+
+.cara#atras {
+	width: 20px;
+	height: 20px;
+	background-color: rgb(201, 171, 0);
+	border-radius: 50%;
+}
+
+.cara#medio1 {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: gold;
+	transform: translateZ(2px);
+}
+
+.cara#medio2 {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:rgb(201, 171, 0);
+	transform: translateZ(1px);
+}
+
+
+/* LOGIN */
+.login {
+	color: white;
+	float: right;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 50px;
+	padding: 3px;
+}
+
+.dropdown-login {
+	width: 350px;
+	height: 100px;
+	color: black;
+	position: relative;
+	border: 1px solid black;
+	display: none;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background-color: #f9f9f9;
+	top: 14px;
+	right: 190px;
+	text-align: center;
+	align-items: center;
+	font-size: smaller;
+	border-radius: 5px;
+	padding-top: 5px;
+}
+
+.login:hover {
+	border: solid white 1px;
+	cursor: pointer;
+
+}
+
+.login:hover .dropdown-login{
+	border: solid white 1px;
+	display: block;
+	cursor: auto;
+	transition-delay: 1s;
+	transition-duration: 1s;
+	transition-property: 1s;
+}
+
+#btn-login {
+	background: rgb(240,194,80);
+	background: linear-gradient(0deg, rgba(240,194,80,1) 0%, rgba(247,221,157,1) 100%);
+	width: 180px;
+	height: 40px;
+	margin: 3px;
+	cursor: pointer;
+	border-radius: 5px;
+	border: solid 1px black;
+}
+
+#btn-login:hover {
+	background: rgb(242,221,172);
+	background: linear-gradient(180deg, rgba(242,221,172,1) 0%, rgba(237,182,43,1) 97%, rgba(237,181,40,1) 100%);
+}
+/*La esquinita en forma de triangulo que hay en el desplegable*/
+.tri-login {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	top: -30px;
+	right: 65px;
+}

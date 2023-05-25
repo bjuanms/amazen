@@ -1,0 +1,86 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* Propiedades estructura principal */
+body {
+	font-family: 'Amazon Ember', sans-serif;
+	justify-content: center;
+    min-width: 1000px;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 1000px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+}
+
+
+.main_categorias {
+    padding-top: 150px;
+    width: 100%;
+    *min-width: 1000px;
+    height: 100%;
+    *background-color: blanchedalmond;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(253,45,45,0.4064365248052346) 60%);
+    align-items: center;
+    margin-bottom: 300px;
+
+}
+
+.main_categorias div {
+    display: flex;
+    float: left;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+
+.categorias h3 {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    text-align: center;
+}
+
+.container-img {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.categorias {
+    align-items: center;
+    width: 28%;
+    height: 50vh;
+    background-color: white;
+    border: solid rgb(0,0,0,0.2) 1px;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5%;
+}
+
+.categorias a {
+    width: 100%;
+    float: left;
+    color: #006bc4;
+}
+
+.categorias a:hover {
+    color: #c45500;;
+    text-decoration: underline;
+}

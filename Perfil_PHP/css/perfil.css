@@ -1,0 +1,150 @@
+@charset "utf-8"; 
+
+*{margin: 0px;
+padding: 0px;
+}
+
+body{
+    font-family: 'Amazon Ember',arial, sans-serif;
+    background: white;
+    text-align: justify;
+    min-width: 1700px;  
+}
+
+
+a{ /*link de la marca. al pinchar nos salen todos los productos de esta*/
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover{
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+#usuario{
+    width: 100%;
+    height: 3.3em;
+    background-color:  #defaff
+}
+#perfil_cliente{
+    margin-left: 30%;
+    
+    padding-top: 10px;
+}
+
+#foto_perfil{
+    height: 70px;
+    width: auto;
+    float: left;
+    
+}
+#nombre_perfil_cliente{
+   float: none;
+    margin-left: 10px;
+    font-size: 14px;
+      
+}
+
+#formulario_opinion{
+    margin-left: 30%;
+    margin-right: 33%;
+    height: 700px;
+}
+#titulo_perfil{
+    font-size: 23px;
+    margin-top: 30px;
+}   
+#imagen_prod{
+    height: 40px;
+    width: 90px; 
+}
+#nombre_usuario{
+    font-size: 30px;
+    margin-left: 10px;
+}
+#hr_bajo_tabla{
+    margin-top: 15px;
+}
+#cosas{
+    margin-top: 20px;
+}
+#espacio_dcha{
+    margin-left: 20px;
+    color: #007185;
+    text-decoration: none;
+    font-size: 15px;
+    
+    
+}
+#espacio_dcha:hover{
+    color: #c7511f;
+    text-decoration: underline;
+}
+#jotas{
+    color: rgb(0, 38, 255);
+    margin-left: 30px;
+}
+#r{
+    font-size: 30px;
+}
+/*--------------------------BOTON VER MIS PEDIDOS---------------------*/
+#enviar{
+    background-color:  #ffd814;
+    width: 100px;
+    height: 32px;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+}
+#enviar:hover{
+    background-color: #f1cc13;
+    cursor: pointer;
+ }
+ #enviar:active{
+     background-color: #ffd814;
+ 
+}
+/*--------------------------BOTON EDITAR PERFIL---------------------*/
+#enviar1{
+    background-color:  #ffd814;
+    width: 100px;
+    height: 32px;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+    float: right;
+    margin-right: 50px;
+}
+#enviar1:hover{
+    background-color: #f1cc13;
+    cursor: pointer;
+ }
+ #enviar1:active{
+     background-color: #ffd814;
+ 
+}
+/*--------------------------BOTON COMPRAR JOTAS---------------------*/
+#enviar2{
+    background-color:  #0d41ba;
+    color: white;
+    width: 120px;
+    height: 32px;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+    float: right;
+    margin-right: 50px;
+}
+#enviar2:hover{
+    background-color: #13b2f1;
+    cursor: pointer;
+ }
+ #enviar2:active{
+     background-color: #2e1ee3;
+ 
+}
+
+
+
+ 
