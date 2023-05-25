@@ -107,28 +107,8 @@ a:hover{
  #enviar:active{
      background-color: #ffd814;
  
-}
-.transparent{
-    margin: 10px;
-}
-#foto_final{
-    margin-left: 290px;
-}
+  }
+  
 
 
-/*ESTA PARTE CORRESPONDE A LA PÁGINA PEDIDOS.PHP EN LA CARPETA PERFIL_PHP*/
-#tabla_pedidos{
-    width: 100%;
-    border-color: #12213a;
-}
-#td_tabla_pedidos{
-    padding: 10px;
-    padding-left: 60px;
-}
-#precio_total{
-    color: #c7511f;
-    font-size: 20px;
-}
-#unidades_total{
-    color: blue;
-}
+ 

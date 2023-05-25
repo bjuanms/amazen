@@ -5,9 +5,6 @@ footer {
 	min-width: 1000px;
 	padding-bottom: 50px;
 	background-color: #232f3e;
-	*position: sticky;
-	bottom: 0;
-	z-index: -1;
 }
 
 .volver-arriba {

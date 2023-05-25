@@ -168,13 +168,6 @@ function txt_valoracion ($id_producto)  {
 
             $resultado = mysqli_fetch_array($consulta);
 
-            //Esto es para que pille bien la imagen de la valoracion cuando es 0 ya que si no no la pilla
-            if ($resultado['rate']){
-                $rate = $resultado['rate'];
-            } else {
-                $rate = "";
-            }
-
             $query_nom_usu = "select nombre from usuario where id_usuario = ".$resultado['id_usuario']."";
     
             //echo $query; //Para comprobar errores mysql
@@ -183,7 +176,6 @@ function txt_valoracion ($id_producto)  {
 
             $nom_usu = mysqli_fetch_array($consulta2);
 
-            echo "<div class='txt_valoracion'>";
                 echo "<p id='valoracion'>\n";
                 echo "        <p id='perfil_cliente'>\n";
                 echo "            <table>\n";
@@ -195,16 +187,13 @@ function txt_valoracion ($id_producto)  {
                 echo "                </td>\n";
                 echo "            </table>\n";
                 echo "        </p>\n";
-                echo "            <img src='./img/estrellas/estrellas_".$rate.".png' id='estrellitas_valoracion_texto'>\n";
+                echo "            <img src='./img/estrellas/estrellas_".$resultado['rate'].".png' id='estrellitas_valoracion_texto'>\n";
                 echo "            <b id='titulo_valoracion_texto'>".$resultado['titulo_valoracion']."</b><br>\n";
                 echo "            <span id='fecha_subida_valoracion'>Valorado el ".$resultado['fecha']."</span><br>\n";
-
                 echo "            <p id='texto_valoracion'>\n";
                 echo               $resultado['texto_valoracion'];
                 echo "            </p>\n";
-
                 echo "    </p> \n";
-            echo "</div>";
         }
     }
     mysqli_close($conexion);

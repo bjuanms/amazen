@@ -11,11 +11,11 @@ function ft_login () {
         $text_login.= "         <p>".$_SESSION['nom_usu']."</p>";
         $text_login.= "       <div class='dropdown-login'>\n";
         $text_login.= "           <span class='tri-login'>&#9652;</span>\n";
-        $text_login.= "           <a href='login/logout.php'><button id='btn-login'>Cerrar sesión</button></a>\n";
+        $text_login.= "           <a href='../login/logout.php'><button id='btn-login'>Cerrar sesión</button></a>\n";
         $text_login.= "           <br>\n";
-        $text_login.= "           <p><a id='empieza' href='Perfil_PHP/perfil.php'>Mi perfil</a></p>\n";
-        $text_login.= "           <p><a id='empieza' href='Política_amazen/politica_amazen.php'>Atención al cliente</a></p>\n";
-        $text_login.= "           <p><a id='empieza' href='Jotas_PHP/jotas.php'>Compra Jotas</a></p>\n";
+        $text_login.= "           <p><a id='empieza' href='../Perfil_PHP/perfil.php'>Mi perfil</a></p>\n";
+        $text_login.= "           <p><a id='empieza' href='../Política_amazen/politica_amazen.php'>Atención al cliente</a></p>\n";
+        $text_login.= "           <p><a id='empieza' href='../Jotas_PHP/jotas.php'>Compra Jotas</a></p>\n";
         $text_login.= "       </div>\n";
         $text_login.= "   </div>\n";
     } else {
@@ -25,7 +25,7 @@ function ft_login () {
         $text_login.= "           <span class='tri-login'>&#9652;</span>\n";
         $text_login.= "           <a href='login/login.php'><button id='btn-login'>Identificarse</button></a>\n";
         $text_login.= "           <br>\n";
-        $text_login.= "           <p>¿Eres cliente nuevo?<a id='empieza' href='registro/registro.php'> Empieza aquí</a></p>\n";
+        $text_login.= "           <p>¿Eres cliente nuevo?<a id='empieza' href='../registro/registro.php'> Empieza aquí</a></p>\n";
         $text_login.= "       </div>\n";
         $text_login.= "   </div>\n";
     }
@@ -77,7 +77,7 @@ function ft_header () {
     $text_header.= "       <div id='menu_header'>\n";
     $text_header.= "           <ul class='nav'>\n";
     $text_header.= "               <li id='item-cero'>\n";
-    $text_header.= "                   <a href='index.php'>Inicio</a>\n";
+    $text_header.= "                   <a href='../index.php'>Inicio</a>\n";
     $text_header.= "               </li>\n";
     $text_header.= "               <li id='item-uno'>\n";
     $text_header.= "                   <a href='#'>Mejor valorados</a>\n";
