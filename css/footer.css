@@ -1,0 +1,166 @@
+/* FOOTER */
+
+footer {
+	width: 100%;
+	min-width: 1000px;
+	padding-bottom: 50px;
+	background-color: #232f3e;
+	*position: sticky;
+	bottom: 0;
+	z-index: -1;
+}
+
+.volver-arriba {
+	width: 100%;
+	color: white;
+	background-color: #37475a;
+	height: 43px;
+	text-align: center;
+	align-items: center;
+}
+
+.volver-arriba p {
+	padding-top: 12px;
+	font-size: small;
+}
+
+.volver-arriba:hover {
+	background-color: #485769;
+	cursor: pointer;
+}
+
+.container_footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.box_footer {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	*width: 180px;
+}
+
+.box_footer .terms {
+	max-width: 350px;
+	margin-top: 20px;
+	font-weight: 500;
+	color: #7a7a7a;
+	font-size: 18px;
+}
+
+.box_footer h4 {
+	margin-bottom: 10px;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.box_footer a {
+	margin-top: 10px;
+	color: #d7dddd;
+	font-weight: 500;
+	font-size: 13px;
+	opacity: 0.8;
+}
+
+.box_footer a:hover {
+	text-decoration: underline;
+}
+
+.box_footer a .fa-brands {
+	font-size: 20px;
+}
+
+.box_copyright {
+	margin: auto;
+	text-align: center;
+	padding: 0px 40px;
+}
+
+.box_copyright p {
+	margin-top: 20px;
+	color: #7a7a7a;
+}
+
+.box_copyright hr {
+	border: none;
+	height: 0.5px;
+	background-color: #7a7a7a;
+}
+
+.box_copyright .logo img{
+	margin-top: 30px;
+	width: 90px;
+}
+
+.paises_copyrigth {
+	*width: 80%;
+	min-width: 800px;
+	display: flex;
+	
+	justify-content: center;
+}
+
+ .paises_copyrigth ul {
+	list-style: none;
+	min-width: 900px;
+	display: flex;
+
+	justify-content: center;
+	flex-wrap: wrap;
+
+} 
+
+.paises_copyrigth ul li{
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+}
+
+.paises_copyrigth ul li a{
+	color: #d7dddd;
+	font-weight: 400;
+	font-size: 12px;
+	opacity: 0.8;
+}
+
+.paises_copyrigth ul li a:hover{
+	text-decoration: underline;
+}
+
+.footer-final {
+	width: 100%;
+	min-width: 1000px;
+	height: 15vh;
+	background-color: #131a22;
+	color: white;
+	font-size: small;
+	padding-top: 30px;
+}
+
+.footer-final ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.footer-final ul li{
+	float: left;
+	margin: 10px;
+}
+
+.footer-final ul li a{
+	color: white;
+	opacity: 0.8;
+}
+
+.footer-final ul li a:hover{
+	text-decoration: underline;
+}
+
+.footer-final p{
+	text-align: center;
+}

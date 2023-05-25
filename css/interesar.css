@@ -1,0 +1,428 @@
+@charset "utf-8"; 
+
+#promo{
+ width: 100%;
+ height: 3.7em;
+ background-color: rgb(235, 239, 241);
+ 
+}
+#promo_tabla{
+    width: auto;
+    padding-top: 7px;
+    
+}
+#promo_td{
+    width: 1000px;
+}
+#marca_promo{
+    height: 30px;
+    width: 90px;  
+}
+#promo_link:hover{
+    text-decoration: none;
+}
+
+#prod_promo{
+    height: 40px;
+    width: 90px;  
+}
+#precio_promo{
+    color: rgb(170, 89, 89);
+    font-size: 1.5em;
+}
+#descrip_promo{
+    color: rgb(44, 27, 27);
+}
+
+/*------------------------ DIVISIÓN DE PRODUCTOS ---------------------*/
+#producto{
+    
+    margin-left: 16%;
+    margin-right:15%;
+}
+#producto_t{
+    width: 100%;
+    margin-top: 1%;
+    height: 300px;
+    
+    
+}
+#producto_td1{
+  /*padding-top: 50px;   */ 
+  width: 450px;
+  padding-right: 20px;
+  
+}
+#producto_td2{
+    width: 600px;
+    padding: 40px;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-top: 0%;/**/
+}
+#producto_td3{
+    width: 250px;
+    padding: 40px;
+    padding-left: 20px;
+    padding-top: 0%;/**/
+}
+fieldset{
+    height: auto;
+    border-radius: 10px;
+    border-color: white;
+    padding: 15px;
+    padding-top: 0%;/**/
+    font-size: 16px;
+    
+}
+#imagen_producto{
+   height: 400px;
+   margin-left: 5px;
+   
+}
+
+#imagenes_producto_t{
+    width: 20px;
+    float: left;
+    height:300px;
+}
+/*IMAGENES PRODUCTO*/
+#imagenes_producto1{
+    height: 50px;
+    padding: 2px;
+    border-color: rgb(207, 203, 203);
+    border-radius: 5px;
+}
+#imagenes_producto1:hover{
+    border-color: orange;
+}
+#imagenes_producto2{
+    height: 50px;
+    padding: 2px;
+    border-color: rgb(207, 203, 203);
+    border-radius: 5px;
+}
+#imagenes_producto2:hover{
+    border-color: orange;
+}
+#imagenes_producto3{
+    height: 50px;
+    padding: 2px;
+    border-color: rgb(207, 203, 203);
+    border-radius: 5px;
+}
+#imagenes_producto3:hover{
+    border-color: orange;
+}
+#imagenes_producto4{
+    height: 50px;
+    padding: 2px;
+    border-color: rgb(207, 203, 203);
+    border-radius: 5px;
+}
+#imagenes_producto4:hover{
+    border-color: orange;
+}
+
+/* EDICIÓN DE TEXTOS */
+#categorias_arriba{
+    font-size: 12px;
+    color: grey;
+    margin-top: 10px;
+}
+#categorias_arriba:hover{
+    text-decoration:underline;
+}
+#categorias{
+    
+    font-size: 12px;
+    color: grey;
+    margin-top: 10px;
+}
+#nombre_producto{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 30px;
+   text-align: left;
+    /*font-weight: bold;*/
+}
+
+a{ /*link de la marca. al pinchar nos salen todos los productos de esta*/
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover{
+    color: #c7511f;
+    text-decoration: underline;
+}
+#estrellitas{
+    height: 15px;
+}
+#link_valoraciones{
+    margin-left: 10px;
+}
+
+#posible_descuento{
+    color: #c7511f;
+    font-size: 24px;
+    font-weight:300;
+    
+}
+
+#precio_producto{ /*LOS DECIMALES SE PONEN CON PHP https://es.stackoverflow.com/questions/134924/c%C3%B3mo-poner-los-%C3%BAltimos-n%C3%BAmeros-decimales-peque%C3%B1os*/
+    color: black;   
+    font-size: 25px;
+    
+}
+#precio_producto1{ /*Precio columna derecha*/
+    color: black;   
+    font-size: 25px;
+    margin-top: 10px;
+}
+#precio_recomendado{
+    font-size: 12px;
+    color: grey;
+}
+
+/* CONTENIDO QUE APARECE POR ENCIMA DE LA PÁGINA: DEVOLUCIONES GRATIS*/
+#devs_gratis{
+    font-size: 14px;
+}
+.dropbtn {
+    color: #007185;
+    background-color: transparent;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover{
+    color: #c7511f; 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f9f9f9;
+    width: 220px;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius:10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*----------------------------------------------------*/
+
+#direccion_envio_ref{
+    font-size: 13px;
+}
+#direccion_envio_ref:hover{
+    color: #c7511f; 
+    text-decoration: none;
+}
+#stock{ /*si o no*/
+    color: #007600;
+    font-size: 20px;
+}
+#no_stock{
+    color: red;
+}
+#n_unidades_box{
+    border-color: gainsboro;
+    border-radius: 5px;
+    height: 30px;
+}
+#añadir_cesta{
+    background-color:  #ffd814;
+    width: 100%;
+    height: 32px;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+}
+#comprar_ahora{
+    background-color:   #ffa41c;
+    width: 100%;
+    height: 32px;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+#añadir_cesta:hover{
+   background-color: #f1cc13;
+   cursor: pointer;
+}
+#comprar_ahora:hover{
+    background-color:   #f59e1b;
+    cursor: pointer;
+}
+
+/*------------------------------------------*/
+/*Extensión de transacciones seguras 1*/
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    padding: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f9f9f9;
+    width: 400px;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius:10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.dropdown:hover .dropdown-content1 {
+    display: block;
+    
+}
+/*------------------------*/
+
+#enviado_desde{
+    font-size: 12px;
+    color: grey;
+    float: left;
+}
+#color_negro{
+    color: black;
+    font-size: 12px;
+    float: right;
+    margin-right: 40px;
+}
+/*drop_down política de devoluciones*/
+#politica_devoluciones{
+    font-size: 14px;
+    text-align: left;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn1{
+    color: #007185;
+    background-color: transparent;
+    font-size: 14px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    
+}
+.dropbtn1:hover{
+    color: #c7511f; 
+}
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    padding: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f9f9f9;
+    width: 400px;
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 14px;
+    border-radius:10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1:hover .dropdown-content2 {
+    display: block;
+}
+/*--------------------------------------------*/
+
+#lista_deseos{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#lista_deseos:hover{
+    cursor: pointer;
+}
+
+/*-------------------------DIV PRODUCTOS RELACIONADOS----------------*/
+
+#productos_relacionados{
+    margin-left: 16%;
+    margin-right:15%;
+    margin-top: 10%;
+    max-width: 1100px;
+}
+
+#titulo_prods_relacs{
+   font-size: 25px; 
+}
+
+#productos_relacionados_t{
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#prods_relacs_td{
+    width: 200px;
+    text-decoration: none;
+ 
+}
+#prods_relacs_td:hover{
+    cursor: pointer;
+ 
+}
+#prods_relacs_td:hover #titulo_producto_relacionado{
+    color: #c7511f;
+    text-decoration: underline;
+    
+}
+
+#imagen_producto_relacionado{
+    height: 150px;
+    width: auto;
+    margin-left: 37px;
+    margin-top: 20px;
+    
+}
+#titulo_producto_relacionado{
+    text-align: left;
+    margin-left: 10px;
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+#valoracion_producto_relacionado{
+    margin-left: 10px;
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+#estrellitas_prod_relac{
+    height: 15px;
+}
+#precio_producto_relacionado{
+    color: rgb(170, 89, 89);
+    font-size:20px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+#prods_relacs_links{
+    text-decoration: none;
+}

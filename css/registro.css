@@ -1,0 +1,179 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* Propiedades estructura principal */
+body {
+	font-family: 'Amazon Ember', sans-serif;
+	justify-content: center;
+    text-align: center;
+    *flex-wrap: wrap;
+    min-width: 800px;
+}
+
+.arriba {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.logo {
+    width: 100%;
+    height: 50px;
+    padding-left: 130px;
+}
+
+.logo-img {
+    width: 250px;
+}
+
+.registro {
+    width: 335px;
+    border: 1px solid rgb(0, 0, 0,0.2);
+    border-radius: 3px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 27px;
+}
+
+.registro h4 {
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 0.1px;
+    font-size: 25px;
+}
+
+.registro input {
+    align-self: center;
+    margin: 10px 10px 0px 0px;
+}
+
+.font-reg {
+    font-size: 11.5px;
+}
+
+.font-reg2 {
+    font-size: 10.5px;
+    
+}
+
+.i {
+    width: 13px;
+}
+
+p.txt2 {
+    font-size: small;
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    font-size: 10.5px;
+}
+
+p.txt3 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+a {
+    color: #006bc4;
+}
+
+a:hover {
+    color: #c45500;;
+    text-decoration: underline;
+}
+
+span.triangulo {
+    color: rgb(0, 0, 0,0.7);
+    font-size: 18px;
+    position: relative;
+    margin-right: 5px;
+    top: 3px;
+}
+
+
+.usr-mail, .usr-name, .usr-passwd, .usr-passwd-conf {
+        width: 100%;
+        height: 28px;
+        padding: 0 10px;
+        font-size: 18px;
+        outline-color: #ff8c0d;
+        border: solid 1px grey;
+        border-radius: 3px;
+        z-index: 3;
+        font-size: 12px;
+}
+
+.btn-log {
+    width: 100%;
+    height: 28px;
+    background: rgb(240,194,80);
+	background: linear-gradient(0deg, rgba(240,194,80,1) 0%, rgba(247,221,157,1) 100%);
+    border: solid 1px grey;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.login {
+    margin-top: 15px;
+    width: 315px;
+}
+
+.login fieldset {
+    border: none;
+    border-top: solid rgb(0, 0, 0,0.1) 1px;
+    font-size: 11px;
+    color: rgb(0, 0, 0,0.6);
+}
+
+.btn-reg {
+    margin-top: 10px;
+    width: 100%;
+    height: 28px;
+    background: rgb(188, 188, 188);
+	background: linear-gradient(0deg, #e8eaed 0%, #f7f8fa 100%);
+    border: solid 1px grey;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+
+.abajo {
+    *background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 69%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, #e8eaed 0%, #f7f8fa 100%);
+    width: 100%;
+    padding: 25px;
+    font-size: 9px;
+}
+
+.abajo a {
+    margin: 13px;
+}
+
+.abajo p {
+    margin-top: 10px;
+    color:rgb(0, 0, 0,0.7);
+}
+
+
+.btn-volver, .btn-validar {
+    width: 100px;
+    height: 28px;
+    background: rgb(240,194,80);
+	background: linear-gradient(0deg, rgba(240,194,80,1) 0%, rgba(247,221,157,1) 100%);
+    border: solid 1px grey;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}

@@ -1,0 +1,192 @@
+@charset "utf-8"; 
+
+*{margin: 0px;
+padding: 0px;
+}
+header{
+ height: 6em;
+ width: 100%;
+ background: #12213a;
+}
+body{
+    font-family: 'Amazon Ember',arial, sans-serif;
+    background: white;
+    text-align: justify;
+    min-width: 1700px;  
+}
+#promo{
+ width: 100%;
+ height: 3.7em;
+ background-color: rgb(235, 239, 241);
+ 
+}
+#promo_tabla{
+    width: auto;
+    padding-top: 7px;
+    
+}
+#promo_td{
+    width: 1000px;
+}
+#marca_promo{
+    height: 30px;
+    width: 90px;  
+}
+#promo_link:hover{
+    text-decoration: none;
+}
+
+#prod_promo{
+    height: 40px;
+    width: 90px;  
+}
+#precio_promo{
+    color: rgb(170, 89, 89);
+    font-size: 1.5em;
+}
+#descrip_promo{
+    color: rgb(44, 27, 27);
+}
+
+a{ /*link de la marca. al pinchar nos salen todos los productos de esta*/
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover{
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+#usuario{
+    width: 100%;
+    height: 3.3em;
+    background-color:  #defaff
+}
+#perfil_cliente{
+    margin-left: 30%;
+    
+    padding-top: 10px;
+}
+
+#foto_perfil{
+    height: 30px;
+    width: auto;
+    float: left;
+    
+}
+#nombre_perfil_cliente{
+   float: none;
+    margin-left: 10px;
+    font-size: 14px;
+      
+}
+
+#formulario_opinion{
+    margin-left: 30%;
+    margin-right: 33%;
+    height: 700px;
+}
+#titulo_valoraciones{
+    font-size: 23px;
+    margin-top: 30px;
+}   
+#imagen_prod{
+    height: 40px;
+    width: 90px; 
+}
+#nombre_producto{
+    font-size: 14px;
+}
+#hr_bajo_tabla{
+    margin-top: 15px;
+}
+#valoracion_general{
+    margin-top: 19px;
+}
+#titulo_valoracion_general{
+    font-size: 19px;
+    
+}
+#boton_borrar{
+    color: #007185;
+    background-color: transparent;
+    font-size: 14px;
+    text-align: right;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+    
+}
+#boton_borrar:active{
+    color: #c7511f; 
+}
+
+#form_estrellitas{
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+  
+  #form_p {
+    text-align: left;
+    
+  }
+  
+  #form_label {
+    font-size: 40px;
+    padding-top: 0%;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+    
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+   
+  }
+  #radio2{
+      height: 50px;
+      width: 50px;
+  }
+
+  #input_titulo_valoracion{
+    height: 30px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 4px;
+    border-width: 1px;
+    margin-bottom: 15px;
+  }
+     
+  
+  #input_titulo_valoracion:focus{
+    border-color: rgb(255, 144, 0);
+    box-shadow: 0px 0px 1px rgb(255, 144, 0) inset, 0 0 8px rgb(255,144,0);
+    outline: none;
+    }
+ 
+  #blablabla{
+    font-size: 14px;
+    color: rgb(58, 55, 55); 
+    margin-top: 8px;
+  }
+  #añadir_foto{
+      margin-top: 10px;
+  }
